@@ -17,6 +17,8 @@ Notre objectif est de récupérer des données d’une voiture compatible (ex: K
 ## Interprétation des résultats
 
 > Dashboard grafana
+![Dashboard Grafana](dashboard.png)
+
 
 ## Impact environnemental
 
