@@ -61,7 +61,7 @@ La console va donc afficher les messages que le véhicule envoie.
 Les "**trames**" respectent le **standard OBD-II**.
 
 ### Qu'est ce que le standard OBD-II ? 
-## Requêtes
+#### Requêtes
 La **requête PID** fonctionnelle est envoyée au véhicule sur le bus CAN à l'ID 0x7DF, en utilisant *8 octets* de données. Les octets sont :
 
 ![Query](query.png)
@@ -70,7 +70,7 @@ Le *Code PID* correspond à une information précise. Se reférer à la doc : ht
 
 **Pourquoi 0x7DF ?** Les ECU qui peuvent répondre aux requêtes OBD écoutent à la fois l'ID de diffusion fonctionnel de 0x7DF et un ID attribué dans la plage 0x7E0 à 0x7E7.
 
-## Réponses
+#### Réponses
 Le véhicule répond à la **requête PID** sur le bus CAN avec des ID de message qui dépendent du module qui a répondu. Généralement, le moteur ou l'ECU principal répond à l'ID 0x7E8. D'autres modules, comme le contrôleur hybride ou le contrôleur de batterie d'une Prius, répondent à 0x7E9, 0x7EA, 0x7EB, etc. Ce sont 0x8 de plus que l'adresse physique à laquelle le module répond. Même si le nombre d'octets dans la valeur renvoyée est variable, le message utilise malgré tout 8 octets de données (protocole de bus CAN sous forme de **Frameformat avec 8 octets de données**). Les octets sont :
 
 ![Response](response.png)
