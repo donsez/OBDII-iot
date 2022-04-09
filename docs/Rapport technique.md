@@ -95,7 +95,7 @@ C'est Node Red qui va s'occuper **d'insérer les données** dans Influxdb via un
 
 Pour connecter InfluxDB à Grafana, il faut donner les identifiants de l'utilisateur et de la base de données ainsi que le bucket cible. Lors du **processus** de création d'un panel grafana, ce dernier affiche les bases de données disponibles. Nous sélectionnons la base de donnée InfluxDB (que nous avons créée et connectée auparavant) pour que l'on puisse récupérer les données avec des **requêtes Flux** pour les convertir en différents graphiques.
 
-![Dashboard Grafana](dashboard.png)
+![Dashboard Grafana](../dashboard/dashboard.png)
 
 Voici un exemple de requête Flux qui recpère toutes les données relatives à la variable `temp` sur la dernière heure passée :
 ```
